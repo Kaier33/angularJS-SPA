@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻后台系统登录</title>
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap3.3.7-master/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/login.css" />
+    <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="../node_modules/angular-cookies/angular-cookies.js"></script>
+</head>
+
+<body ng-app="loginManage">
+    <div class="bigbox">
+        <canvas id="Mycanvas"></canvas>
+
+        <div class="loginBox" ng-controller="myCtrl" ng-init="isTouch=true" >
+            <h2 class="text-center">
+                <a href="#/login" ng-class="{active:isTouch}" ng-click="loginTpl()">登录</a>
+                <a href="#/register" ng-class="{active:!isTouch}" ng-click="registerTpl()">注册</a>
+            </h2>
+            <hr>
+
+            <!--视图层开始-->
+            <div ng-view>
+
+            </div>
+            <!--  视图层结束-->
+        </div>
+
+    </div>
+</body>
+
+
+<script type="text/javascript" src="./assets/js/background.js"></script>
+<script type="text/javascript" src="./login/login.js"></script>
+<script type="text/javascript" src="./login/register.js"></script>
+<script type="text/javascript" src="./loginManage.js"></script>
+
+</html>

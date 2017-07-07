@@ -1,0 +1,46 @@
+html,
+body {
+  width: 100%;
+}
+.left {
+  position: fixed;
+  top: 52px;
+  width: 230px;
+  height: 100%;
+  background-color: #666;
+}
+.right {
+  position: absolute;
+  left: 230px;
+  right: 0;
+  top: 52px;
+  min-height: 600px;
+}
+.right .keySearch {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+.right #updateNewsTpl .list-group .list-group-item {
+  height: 120px;
+}
+.right #updateNewsTpl .list-group .list-group-item .fleft {
+  float: left;
+}
+.right #updateNewsTpl .list-group .list-group-item .fleft .news-list-descript {
+  display: inline-block;
+  width: 800px;
+  color: gray;
+}
+.right #updateNewsTpl .list-group .list-group-item .fright {
+  margin-top: 35px;
+  float: right;
+}
+#changePwd {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#addNewsForm {
+  margin-left: 50px;
+  margin-top: 50px;
+}
